@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+
+.conteiner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:123px;
+    padding-top: 50px;
+    width: 1300px;
+         .banner__txt{
+            width: 1300px;
+            height: 450px;
+            top: 90px;
+            left: 120px;
+            gap: 0px;
+            opacity: 0px;
+           
+            #well{
+                font-family: Cera Pro;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                color: #3D3D3D;
+                padding-top: 138px;
+            }
+            h1{
+                font-family: Cera Pro;
+                font-size: 70px;
+                font-weight: 900;
+                line-height: 70px;
+                text-align: left;
+                padding-top: 10px;
+            }
+            p{
+                font-family: Cera Pro;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                color: #727272;
+                padding-top: 5px;
+            }
+            button{
+                width: 140px;
+                height: 40px;
+                top: 415px;
+                left: 161px;
+                gap: 0px;
+                border-radius: 6px;
+                opacity: 0px;
+                font-family: Cera Pro;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: left;
+                color: #fff;
+                background:#46A358;
+                text-align: center;
+                border: none;
+                margin-top:55px;
+            }
+            #mark{
+                background: #fff !important;
+                color: #46A358 !important;
+            }
+          
+         }
+        
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 1300px;
+}
+}

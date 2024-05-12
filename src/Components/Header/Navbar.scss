@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+
+.conteiner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 3px 5px #0002;
+    height:83px;
+    padding-top: 25px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      .nav__items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .2s ease;
+        gap: 50px;
+
+         a{
+            text-decoration: none;
+            color:#3D3D3D;
+            font-family: Cera Pro;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20.11px;
+            text-align: left; 
+         }
+       
+        
+      }
+      .nav__cards{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+          svg{
+            font-size: 20px;
+          }
+     }
+     button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100px;
+        height: 35px;
+        top: 25px;
+        left: 1220px;
+        gap: 0px;
+        border-radius: 6px;
+        opacity: 0px;
+        font-family: Cera Pro;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.11px;
+        text-align: left;
+        color: #fff;
+        background: #46A358;
+        border: none;
+     }
+     #sup{
+        position: relative;
+        font-size:16px;
+        height: 10px;
+        border-radius: 50%;
+     }
+}
+#menu{
+    display: none;
+}
+
+ 
+@media (max-width: 1200px) {
+    .nav__items {
+      position: absolute;
+      top: 83px; 
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+      background: #fff;
+      box-shadow: 0 3px 5px #0002;
+      flex-direction: column;
+      gap: 0px;
+      justify-content: center;
+      align-items: center;
+      line-height: 2;
+      z-index: 10;
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+  
+
+    .nav__items.show {
+      transform: scaleY(1);
+    }
+    #menu{
+        display: flex;
+        justify-content: center;
+    }
+    .nav__cards{
+        position: fixed;
+        bottom: 0;right: 50px;
+        left: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:100px;
+        background: #fff;
+     }
+  }
+  @media (max-width: 970px) {
+    .nav__cards{
+        position: fixed;
+        bottom: 0;right: 50px;
+        left: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:50px;
+        
+     }
+  }
+
+
+  @media (max-width: 480px) {
+    .nav__cards{
+        position: fixed;
+        bottom: 0;right: 50px;
+        left: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:50px;
+        
+     }
+  }

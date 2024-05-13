@@ -5,8 +5,7 @@ import { BiSearch } from "react-icons/bi";
 import React, {useState} from 'react'
 import './Navbar.scss'
 import logo from './img/Logo.svg'
-import { NavLink } from 'react-router-dom'
-import Banner from "../Banner/Banner";
+import { NavLink ,Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -34,8 +33,10 @@ const Navbar = () => {
             </div>
 
             <div className="nav__cards">
-                <span><BiSearch /></span>
+                <span><BiSearch /></span> 
+                <Link to={"Product__cart"}>
                 <span><BiCart /> <sup id="sup">5</sup></span>
+                </Link>
                 <button><BiLogIn /> Login</button>
             </div>
 

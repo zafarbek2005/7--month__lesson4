@@ -36,22 +36,26 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: .3s ease-in-out;
       &:hover{
-        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       }
     img{
         width: 250px;
         height: 250px;
         object-fit: cover;
+         
     }
     .btns{
+
         display: flex;
         align-items: center;
         justify-content: center;
         gap:30px;
          padding-top: 10px;
+
         svg{
             font-size:20px;
         }
+        
         button{
             background:#fff !important;
             color:#000;

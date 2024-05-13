@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+
+.conteiner{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wrapper{
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    gap: 86px;
+       .tabel__name{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 120px;
+        
+          p{
+            font-family: Cera Pro;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            text-align: left;
+
+          }
+           .tt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 108px;
+           }
+       }
+       .products__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 275px;
+        background: #FBFBFB;
+        width: 782px;
+        height: 70px;
+        top: 219px;
+        left: 120px;
+        gap: 0px;
+        opacity: 0px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+           .product__img{
+            display: flex;
+            align-items: center;    
+            gap: 14px;
+           }
+           .price_items {
+             display: flex;
+             align-items: center;
+             gap: 108px;
+            position: relative;
+            left: 20px;
+            #pl{
+                position: relative;
+                left: 70px;
+            }
+         
+              #btn2{
+                display: flex;
+                align-items: center;
+                gap: 17px;
+                padding-left: 50px;
+                button{
+
+                    background: linear-gradient(180deg, #46A358 0%, rgba(70, 163, 88, 0.8) 100%);
+                    width: 25.71px;
+                    height: 30px;
+                    object-fit: cover;
+                    border-radius: 29px;
+                    border: none;
+                    color: #fff;
+                    font-family: Cera Pro;
+
+
+                }
+              }
+           }
+       }
+}
+.bt{
+    position: relative;
+    left: 20px;
+    button{
+        border: none;
+        font-size: 24px;
+    }
+}
+

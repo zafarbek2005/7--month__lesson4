@@ -6,12 +6,15 @@ import React, {useState} from 'react'
 import './Navbar.scss'
 import logo from './img/Logo.svg'
 import { NavLink ,Link} from 'react-router-dom'
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
 
     const [toggle,settogle] = useState(false)
+    const carts = useSelector(s => s.cart.value)
 
   return (
+    
  <>
     <header>
 
@@ -35,7 +38,7 @@ const Navbar = () => {
             <div className="nav__cards">
                 <span><BiSearch /></span> 
                 <Link to={"Product__cart"}>
-                <span><BiCart /> <sup id="sup">5</sup></span>
+                <span><BiCart /> <sup id="sup">{carts.length}</sup></span>
                 </Link>
                 <button><BiLogIn /> Login</button>
             </div>

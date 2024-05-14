@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { incrementCartQuantity , decrementCartQuantity,removeItemFromCart} from '../../context/cardSlice'
 import './Product__cart.scss'
 import { AiOutlineDelete } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Product__cart = ({carts}) => {
   const dispatch = useDispatch()
@@ -90,7 +91,9 @@ const Product__cart = ({carts}) => {
             <p id='ss'>$ {total.brm()}</p>
          </div>
          <div className="subbtn">
+              <Link to={'/Productcheklink'}>
               <button>Proceed To Checkout</button>
+              </Link>
             <p>Continue Shopping</p>
          </div>
       </div>

@@ -18,7 +18,7 @@ const Product__cart = ({carts}) => {
 
 
    <div className="price" id='pl'>
-      <p>{el.price}</p>
+      <p>{el.price} USD</p>
     </div>
   
 
@@ -29,7 +29,7 @@ const Product__cart = ({carts}) => {
     </div>
     
     <div className="price">
-      <p>{(el.price * el.quantity).brm()}</p>
+      <p>{(el.price * el.quantity).brm()} USD</p>
     </div>
    
    </div>
@@ -67,7 +67,33 @@ const Product__cart = ({carts}) => {
     </div>
 
   <div className="tortal__sum">
-    TOTALSUM:{total.brm()}
+      <p>Cart Totals</p>
+
+      <div className="sums">
+         <p>Coupon Apply</p>
+         <input type="text" placeholder='Enter coupon code here...'/>
+         <button>Apply</button>
+         <div className="subtotal">
+            <p>Subtotal</p>
+            <p id='p2'>$ {total.brm()}</p>
+         </div>
+         <div className="subtotal">
+            <p>Coupon Discount</p>
+            <p>(-) 00.00</p>
+         </div>
+         <div className="subtotal">
+            <p>Shiping</p>
+            <p>$16.00</p>
+         </div>
+         <div className="subtotal1">
+            <p>Total</p>
+            <p id='ss'>$ {total.brm()}</p>
+         </div>
+         <div className="subbtn">
+              <button>Proceed To Checkout</button>
+            <p>Continue Shopping</p>
+         </div>
+      </div>
   </div>
 
 

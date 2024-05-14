@@ -9,7 +9,7 @@ import { addToCart } from "../../context/cardSlice";
 const Products = ({data}) => {
   const dispatch = useDispatch()
 
-    let Products = data?.slice(18,48).map(el => (
+    let Products = data?.slice(0,12).map(el => (
         <div className="card" key={el.id}>
         
         <img src={el.images[0]} alt="images" />
